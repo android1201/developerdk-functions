@@ -1,5 +1,5 @@
 {
-  "name": "@developerdk",
+  "name": "@developerdk/functions",
   "version": "1.0.0",
   "description": "An npm_module have lot of discord_bot functions!",
   "main": "src/module.js",
