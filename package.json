@@ -1,0 +1,26 @@
+{
+  "name": "@developerdk",
+  "version": "1.0.0",
+  "description": "An npm_module have lot of discord_bot functions!",
+  "main": "src/module.js",
+  "scripts": {
+    "test": "node . && node testings/developerdk.js",
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/developerdk1973/developerdk.git"
+  },
+  "keywords": [
+    "superagent"
+  ],
+  "author": "developerdk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/developerdk1973/developerdk/issues"
+  },
+  "homepage": "https://github.com/developerdk1973/developerdk#readme",
+  "dependencies": {
+    "superagent": "^6.1.0"
+  }
+}
