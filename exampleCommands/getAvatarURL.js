@@ -3,7 +3,7 @@
  */
 const {
 	Function
-} = require('@developerdk');
+} = require('@developerdk/functions');
 
 let target;
 const user = 'here message variable'.mentions.members.first();
