@@ -20,12 +20,6 @@ let data = Function.getAvatarURL({
 	userid: target,
 	bot: 'here bot variable'
 });
-if (data.error) {
-	if (data.type === 'no-userid') return console.log('No userid!');
-	if (data.type === 'invalid-userid') return console.log('Invalid userid!');
-	if (data.type === 'no-bot') return console.log('No bot!');
-	if (data.type === 'invalid-bot') return console.log('Invalid bot!');
-}
 const avatarURL = data;
 /*
  * @Command done
