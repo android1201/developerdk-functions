@@ -7,7 +7,7 @@ const {
 
 let target;
 const user = 'here message variable'.mentions.members.first();
-const botuser = await 'here bot variable'.users.fetch('here args variable' [0]).catch(() => null);
+const botuser = await 'here bot variable'.users.fetch('here args variable'[0]).catch(() => null);
 if (user) {
 	target = user.user.id;
 } else if (botuser) {
