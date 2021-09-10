@@ -13,7 +13,7 @@ if (user) {
 } else if (botuser) {
 	target = botuser.id;
 } else {
-	target = message.author.id;
+	target = 'here message variable'.author.id;
 }
 
 let data = Function.getAvatarURL({
