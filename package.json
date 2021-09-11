@@ -1,6 +1,6 @@
 {
   "name": "developerdk-functions",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "An npm_module have lot of discord_bot functions!",
   "main": "src/module.js",
   "scripts": {
