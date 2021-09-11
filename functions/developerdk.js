@@ -13,12 +13,34 @@ async function getAvatarURL({
 	userid: userid,
 	bot: bot
 }) {
-	const user = await bot.users.fetch(userid).catch(() => null);
-	const AvatarURL = user.displayAvatarURL({
-		dynamic: true,
-		size: 4096
+	return new Promise((resolve, reject) => {
+		if (!userid) {
+			reject('|~_~| Missing user id!');
+		}
+		if (userid) {
+			if (!userid.length) {
+				reject('|~_~| Missing user id!');
+			}
+		}
+		if (!isNaN(userid)) {
+			reject('|~_~| Invalid user id!');
+		}
+		if (!bot) {
+			reject('|~_~| Missing bot variable!');
+		}
+		if (bot.users === undefined) {
+			reject('|~_~| Invalid bot variable!');
+		}
+		const user = await bot.users.fetch(userid).catch(() => null);
+		if (user.displayAvatarURL() === undefined) {
+			reject('|~_~| Invalid user id!');
+		}
+		const AvatarURL = user.displayAvatarURL({
+			dynamic: true,
+			size: 4096
+		});
+		resolve(AvatarURL);
 	});
-	return AvatarURL;
 }
 /*
  * @Functions done
